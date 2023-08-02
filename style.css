@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --gris-claro: #F5F5F5;
+    --gris-oscuro: #464646;
+    --negro: #000000;
+    --cyan-claro: #EAF2FD;
+}
+
+ /* logo y menu principal */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--gris-claro);
+    padding: 32px;
+}
+
+.logo {
+    position: relative;
+    right: 200px;
+    left: 5px;
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo p {
+    font-size: 16px;
+    color: var(--gris-oscuro);
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+}
+
+.menu__item {
+    color: var(--gris-oscuro);
+    font-size: 16px;
+}
+
+.menu__email {
+    color: var(--negro);
+    font-size: 16px;
+}
+
+    /* Perfil - presentacion y redes sociales */
+
+.inicio {
+    display: flex;
+    justify-content: space-around;
+    height: 450px;
+    padding-left: 200px;
+    background-color: var(--gris-claro);
+}
+
+.inicio__presentacion {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+}
+
+.inicio__presentacion h1 {
+    font-size: 52px;
+    color: var(--gris-oscuro);
+    padding-top: 60px;
+}
+
+.inicio__presentacion p {
+    padding-top: 20px;
+    font-size: 22px;
+    color: var(--gris-oscuro);
+}
+
+.inicio__links {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.inicio__links a {
+    font-size: 16px;
+    color: var(--gris-oscuro);
+}
+
+.inicio__links img {
+    position: relative;
+    top: 4px;
+}
+
+.inicio__foto {
+    display: flex;
+    position: relative;
+    right: 150px;
+    top: 70px;
+    width: 350px;
+    height: 350px;
+}
+
+.inicio__foto img {
+    box-sizing: border-box;
+    width: 320px;
+    height: 320px;
+    border-radius: 200px;
+}
+
+/*Seccion Sobre mi*/
+
+.perfil {
+    display: flex;
+    background-color: var(--cyan-claro);
+    width: 100%;
+    height: 421px;
+}
+
+.perfil__sobremi {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 421px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.perfil__sobremi h2 {
+    font-size: 32px;
+    color: var(--gris-oscuro);
+
+} 
+.perfil__sobremi p {
+    font-size: 22px;
+    color: var(--gris-oscuro);
+    padding-top: 30px;
+    
+}
+
+.perfil__sobremi img {
+    font-size: 22px;
+    color: var(--gris-oscuro);
+    padding-top: 30px;
+}
+
+/*   Responsive  */
+
+@media (max-width: 1440px) { 
+    .inicio{
+        display: flex;
+        justify-content: space-evenly;
+        box-sizing: content-box;
+        height: 450px;
+        padding-left: 100px;
+        background-color: var(--gris-claro);
+    }
+    .inicio__foto {
+        right: 50px;   
+    }
+    .logo {
+        right: 100px;
+    }
+    .logo p {
+        padding-left: 10px;
+    }
+    .perfil {
+        display: flex;
+        background-color: var(--cyan-claro);
+        width: 100%;
+        height: 360px;
+    }
+    .perfil__sobremi {
+        padding-left: 180px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .menu {
+        left: 30px; 
+    }
+    .logo {
+        position: relative;
+        left: 5px;
+    }
+    .logo p{
+        padding-left: 10px;
+    }
+    .inicio {
+        height: 550px;
+        padding-left: 50px;
+        background-color: var(--gris-claro);
+    }
+    .inicio__presentacion h1 {
+        font-size: 42px;
+        color: var(--gris-oscuro);
+        padding-top: 60px;
+    }
+    .inicio__presentacion p {
+        padding-top: 20px;
+        font-size: 20px;
+        color: var(--gris-oscuro);
+    }
+    .inicio__foto {
+        right: 20px;
+        top: 90px;
+    }
+    .inicio__foto img {
+        width: 268px;
+        height: 268px;
+    }
+    .perfil {
+        display: flex;
+        background-color: var(--cyan-claro);
+        width: 100%;
+        height: 500px;
+    }
+    .perfil__sobremi {
+        padding-left: 50px;
+        padding-top: 40px;
+    }
+    .perfil__sobremi p {
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    nav{
+        display: flex;
+        background-color: var(--gris-claro);
+        padding: 15px;
+    }
+    .logo {
+        position: absolute;
+        left: 10px;
+        display: grid;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .logo p {
+        position: absolute;
+        left: 25px;
+        font-size: 16px;
+        color: var(--gris-oscuro);
+        padding-left: 5px;
+        padding-top: 3px;
+    
+    }
+
+    .menu {
+        position: relative;
+        box-sizing: border-box;
+        width: 200px;
+        
+    }
+    .menu a {
+        text-decoration: none;
+        color: var(--gris-oscuro);
+        font-size: 16px;
+    }
+
+    .menu a:nth-child(1) {
+        display: none;
+    }
+    .menu a:nth-child(2) {
+        display: none;
+    }
+    .menu a:nth-child(3) {
+        display: none;
+    }
+    .menu a:nth-child(4) {
+        display: none;
+    }
+    .menu a:nth-child(5) {
+        display: none;
+    }
+    .menu a:nth-child(6) {
+        padding-left: 120px;
+        padding-top: 2px;
+    }
+
+    .inicio__foto {
+        position: absolute;
+        left: 70px;
+        top: 70px;
+        width: 270px;
+        height: 270px;
+        box-sizing: border-box;
+    }
+    .inicio__foto img {
+        box-sizing: border-box;
+        width: 268px;
+        height: 268px;
+        border-radius: 200px;
+    }
+
+    .inicio {
+        height: 780px;
+        padding-left: 30px;
+        padding-right: 20px;
+        background-color: var(--gris-claro);
+    }
+
+    .inicio__presentacion {
+        padding-top: 200px;   
+    }
+
+    .perfil {
+        display: flex;
+        background-color: var(--cyan-claro);
+        width: 100%;
+        height: 480px;
+    }
+
+    .perfil__sobremi {
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .perfil__sobremi p {
+        padding-right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    nav{
+        display: flex;
+        background-color: var(--gris-claro);
+        padding: 15px;
+    }
+    .logo {
+        position: absolute;
+        left: 10px;
+        display: grid;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .logo p {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        box-sizing: border-box;
+        width: 200px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: var(--gris-oscuro);
+        font-size: 16px;
+    }
+    .menu a:nth-child(1) {
+        display: none;
+    }
+    .menu a:nth-child(2) {
+        display: none;
+    }
+    .menu a:nth-child(3) {
+        display: none;
+    }
+    .menu a:nth-child(4) {
+        display: none;
+    }
+    .menu a:nth-child(5){
+        display: none;
+    }
+    .menu a:nth-child(6) {
+        padding-left: 40px;
+        padding-top: 2px;
+    }
+
+    .inicio__foto {
+        position: absolute;
+        left: 55px;
+        top: 70px;
+        width: 270px;
+        height: 270px;
+        box-sizing: border-box;
+    }
+    .inicio__foto img {
+        box-sizing: border-box;
+        width: 268px;
+        height: 268px;
+        border-radius: 200px;
+    }
+
+    .inicio {
+        height: 780px;
+        padding-left: 30px;
+        padding-right: 20px;
+        background-color: var(--gris-claro);
+    }
+    .inicio__presentacion {
+        padding-top: 200px;   
+    }
+
+    .inicio__presentacion h1 {
+        font-size: 2em;
+    }
+
+    .perfil {
+        display: flex;
+        background-color: var(--cyan-claro);
+        width: 100%;
+        height: 820px;
+    }
+    .perfil__sobremi {
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+    .perfil__sobremi p {
+        padding-right: 30px;
+    }
+}

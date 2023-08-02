@@ -1,0 +1,108 @@
+.habilidad {
+    box-sizing: border-box;
+    outline: none; border: none;
+   	text-decoration: none;
+}
+
+.habilidad {
+ 		background-color: #f5f5f5;
+ 		padding: 25px 9%;
+		padding-bottom: 100px;
+}
+
+.habilidad .habilidad__titulo {
+  	text-align: center;
+		padding-bottom: 15px;
+ 	  font-size: 32px;
+  	color: #464646;
+}
+
+.habilidad .habilidad__caso {
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  	gap: 15px;
+  	padding-top: 30px;
+}
+
+.habilidad .habilidad__caso .habilidad__caso--op {
+ 	background-color: #ffffff;
+  	text-align: center;
+  	padding: 50px 20px;
+}
+
+.habilidad .habilidad__caso .habilidad__caso--op img {
+  	height: 50px;
+}
+.habilidad .habilidad__caso .habilidad__caso--op h3 {
+ 	line-height: 2.8;
+}
+
+/*FORMACION ACADEMICA*/
+
+.formacion {
+  	box-sizing: border-box;
+  	outline: none; border: none;
+  	text-decoration: none;
+}
+
+.formacion {
+  	background-color: #EAF2FD;
+  	padding: 15px 9%;
+  	padding-bottom: 100px;
+}
+
+.formacion .formacion__titulo {
+  	text-align: center;
+ 		padding-bottom:15px;
+ 		font-family: 'Raleway';
+  	font-style: normal;
+  	font-weight: 700;
+  	font-size: 32px;
+  	color: #464646;
+  	margin-top: 2rem;
+}
+
+.formacion .formacion__caso {
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  	grid-gap: 80px 15px;
+  	padding-top: 70px;
+}
+
+.formacion .formacion__caso .formacion__caso--op {
+  	background-color: #ffffff;
+  	text-align: center;
+  	padding: 50px 20px;
+  
+}
+
+.formacion .formacion__caso .formacion__caso--op img {
+  	height: 100px;
+}
+.formacion .formacion__caso .formacion__caso--op h3 {
+  	font-size: 20px;
+  	color: #464646;
+}
+
+.formacion .formacion__caso p {
+  	font-size: 1rem;
+ 		color: #464646;
+  	font-weight: 500;
+}
+
+.formacion .formacion__caso h3 {
+  	position: absolute;
+  	margin-top: 3.5rem;
+}
+
+.formacion .formacion__caso p {
+  	position: absolute;
+  	margin-top: 5.5rem;
+}
+
+@media (max-width: 768px){
+	.formacion .formacion__caso .formacion__caso--op h3 {
+  	font-size: 14px;
+  	color: #464646;
+	}
+}
